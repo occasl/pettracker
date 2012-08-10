@@ -59,7 +59,7 @@ Ext.define('MyApp.view.MapPanel', {
             },
             plugins: [
                 new Ext.plugin.google.Tracker({
-                    trackSuspended: true,
+                    trackSuspended: false,
                     allowHighAccuracy: true,
                     marker: new google.maps.Marker({
                         title: 'My Current Location',

@@ -126,6 +126,7 @@ Ext.define('MyApp.controller.PetTracker', {
         var infowindow = new google.maps.InfoWindow({
             content: "We've found your dog sniffing flowers!"
         });
+
         google.maps.event.addListener(dynaMarker, 'click', function () {
             infowindow.open(map, dynaMarker);
         });
@@ -138,6 +139,8 @@ Ext.define('MyApp.controller.PetTracker', {
         var currentPosition = new google.maps.LatLng(geo.getLatitude(), geo.getLongitude());
         this.plotRoute(map, currentPosition, position);
 
+        // stop updates to center
+        geo.suspendUpdates();
     },
 
     plotRoute: function (map, orig, dest) {
