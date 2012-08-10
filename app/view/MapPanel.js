@@ -12,7 +12,7 @@ Ext.define('MyApp.view.MapPanel', {
                 xtype: 'toolbar',
                 docked: 'top',
                 itemId: 'mapToolbar',
-                title: 'Pettracker',
+                title: 'DogTag',
                 items: [
                     {
                         xtype: 'button',

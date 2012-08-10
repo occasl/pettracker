@@ -45,5 +45,4 @@ Ext.application({
         };
         Ext.Viewport.add([petList, petMap, radiusPicker]);
     }
-
 });

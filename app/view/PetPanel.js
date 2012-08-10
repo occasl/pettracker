@@ -24,7 +24,7 @@ Ext.define('MyApp.view.PetPanel', {
             {
                 xtype:'toolbar',
                 docked:'top',
-                title:'Pettracker'
+                title:'DogTag'
             },
             {
                 xtype:'list',
