@@ -50,4 +50,4 @@ Ext.define('MyApp.view.PetPanel', {
     onPetsListItemTap:function (dataview, index, target, record, e, options) {
         this.fireEvent('petSelectCommand', this, record);
     }
-}
+});
