@@ -63,7 +63,7 @@ Ext.define('MyApp.controller.PetTracker', {
         mapView.setRecord(record);
         Ext.Viewport.animateActiveItem(mapView, this.slideLeftTransition);
 
-        this.renderMap(mapView, mapView.down("#petMap")._map, record.data);
+        this.renderMap(mapView, mapView.down("#petMap").getMap(), record.data);
     },
 
     onBackButton: function () {
@@ -93,7 +93,7 @@ Ext.define('MyApp.controller.PetTracker', {
                               position: p,
                               title: record.data.name + "'s Location",
                               animation: google.maps.Animation.DROP,
-                              map: gmap._map
+                              map: gmap.getMap()
 //                              icon: 'resources/img/brown_markerD.png'
                           });
                           g_marks.push(m);
