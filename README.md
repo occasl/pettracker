@@ -9,4 +9,4 @@ http://loutilities.wordpress.com/2012/08/14/mobile-geolocation-app-in-30-minutes
 
 You can also see the sample application deploy on OpenShift here:
 
-http://pettracker-loutilities.rhcloud.com/
+http://dogtags-loutilities.rhcloud.com/
