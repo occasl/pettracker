@@ -25,7 +25,6 @@ Ext.define('MyApp.store.PetTracker', {
         storeId: 'PetTracker',
         proxy: {
             type: 'jsonp',
-            //url: 'http://lsaccosbx.qualcomm.com:8080/dogtag',
             url: 'http://nodetest-loutilities.rhcloud.com/dogtag',
             reader: {
                 type: 'json',
